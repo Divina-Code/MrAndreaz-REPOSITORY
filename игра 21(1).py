@@ -33,7 +33,11 @@ while game:
 
         if answer == "ДА":
             print("Вы ответили ", answer)
+            random_points = randint(1, 10)
         elif answer == "НЕТ":
             print("Вы ответили ", answer)
         else:
             print("Не понял твоего ответа, принимаю только 'ДА' или 'НЕТ' ")
+print("\n____________________________")
+    for b in range(n): # Выводим счёт для каждого игрока
+        print(players[b], "У вас очков:", points[b])
